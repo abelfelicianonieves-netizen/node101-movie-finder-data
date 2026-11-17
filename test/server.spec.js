@@ -5,7 +5,7 @@ const mockAdapter = require('axios-mock-adapter');
 const app = require('../server/app');
 
 // Connect mock adapter
-const mock = new mockAdapter(axios.create());
+const mock = new mockAdapter(axios);
 const movieData = [
   { "Title": "Guardians of the Galaxy: Vol. 2", "Year": "2017" },
   { "Title": "Baby Driver", "Year": "2017" }
